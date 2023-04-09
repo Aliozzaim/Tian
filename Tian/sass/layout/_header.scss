@@ -1,0 +1,41 @@
+.header {
+  min-height: 8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+.header__logo {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+
+  @media only screen and (max-width: 768px) {
+    left: 15%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    left: 23%;
+  }
+  @media only screen and (max-width: 375px) {
+    left: 30%;
+  }
+}
+.header__social-nav {
+  position: absolute;
+  right: 10%;
+  top: 1%;
+  @media only screen and (max-width: 768px) {
+    right: 15%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    right: 23%;
+  }
+  @media only screen and (max-width: 375px) {
+    right: 30%;
+  }
+}
